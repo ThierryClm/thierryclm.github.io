@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TraCflux — tracflux.com</title>
+    <link rel="canonical" href="https://tracflux.com/" />
+    <script>
+      // Anciens liens profonds : /Diagramme_Feux/<fichier> devient tracflux.com/<fichier>.
+      var reste = location.pathname.replace(/^\/Diagramme_Feux\//i, '');
+      if (reste === location.pathname) reste = '';
+      location.replace('https://tracflux.com/' + reste + location.search + location.hash);
+    </script>
+  </head>
+  <body>
+    <p>Page introuvable. TraCflux se trouve sur <a href="https://tracflux.com/">tracflux.com</a>.</p>
+  </body>
+</html>
